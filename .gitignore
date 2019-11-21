@@ -1,0 +1,14 @@
+# Exclude these files
+*.env
+*.csv
+
+# Ignore RStudio files
+*.RData
+*.Rhistory
+
+# Ignore dir contents, but include the dir itself
+data/*
+!data/.gitkeep
+logs/*
+!logs/README.md
+# Ignore
