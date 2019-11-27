@@ -14,20 +14,20 @@ This project was created with [ProjectTemplate](http://projecttemplate.net).
 # Requirements
 Install `ProjectTemplate` and any of the libraries specified in the `config/global.dcf`.
 
-Create a `.env` file with the api (API=somekey) and secret (SECRET=somesecret) keys of your SG account and questionnaire names and IDs (ISI=1234567890). Specify the path to the `.env` file in `lib/globals.R`. Don't push the file to this repo.
+Create a `.env` file with environment variables of the api (API=somekey) and secret (SECRET=somesecret) keys of your SG account and questionnaire names and IDs (ISI=1234567890). Specify the path to the `.env` file in `lib/globals.R`. Don't push the file to this repo.
 
 # Getting started
-To load this project, you'll first need to `setwd()` into the directory
-where this README file is located. Then you need to run the following two
+Open R-Studio. To load this project, you'll first need to `setwd()` into the directory where this README file is located. Then you need to run two
 lines of R code:
 
 ```
+setwd('path/to/where/this/readme/is/located/')
 library('ProjectTemplate')
 load.project()
 ```
 
-After you enter the second line of code, you'll see a series of automated
-messages as ProjectTemplate goes about doing its work. This work involves:
+After you enter the third line of code, you'll see a series of automated
+messages as `ProjectTemplate` goes about doing its work. This work involves:
 * Reading in the global configuration file contained in `config`.
 * Loading any R packages you listed in the configuration file.
 * Reading in any datasets stored in `data` or `cache`.
