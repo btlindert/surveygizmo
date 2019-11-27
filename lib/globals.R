@@ -31,10 +31,10 @@ add.config(
   nsr_dir = '~/Code/repos/nsr3/scripts',
   hash_table = 'data/20191022_NSRHashMappingAll.csv',
   unhash = TRUE,
-  project = 'ercp', # required if unhash = TRUE. Default is 'all'
-  to_check = c('HADS', 'RMEQ', 'BEACKE', 'PANAS', 'IDSSR', 'CTQ', 'BAI', 'ISI'), # 'PSQI', 'MCTQC',
-  not_to_check = c(),
-  merge = TRUE,  # to_check, not_to_check, all'
+  project = 'ercp', # required if unhash = TRUE.
+  to_check = c('HADS', 'RMEQ', 'BAECKE', 'PANAS', 'IDSSR', 'CTQ', 'BAI', 'ISI'), 
+  not_to_check = c(), # 'PSQI', 'MCTQC'
+  merge = TRUE,
   merged_file = 'data/merged_file.csv'
 )
 

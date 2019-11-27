@@ -50,6 +50,7 @@ for (file_name in files) {
   if (file.exists(rscript)) {
 
     # Script.
+    print(rscript)
     source(rscript)
 
     # Data file.
@@ -65,7 +66,4 @@ for (file_name in files) {
 
   # Assing to a variable with the name of the questionniare.
   assign(questionnaire, data)
-
-  # Optional: Write data frame to csv file
-  # write.csv(get(questionnaires[q]), file = file.path(outputDir, paste0(format(Sys.Date(), "%y%m%d_"), questionnaires[q], ".csv")))
 }

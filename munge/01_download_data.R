@@ -19,7 +19,7 @@ for (questionnaire in questionnaires) {
   # Download data if not already present.
   if (!file.exists(file_name)) {
     
-    # Update
+    # Update terminal.
     print(paste('Downloading data for:', questionnaire))
     reload = TRUE
 
